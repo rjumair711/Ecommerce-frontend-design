@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/CSS/ProductListing.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    <title>Product Listing</title>
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="/Images/logo-colored.png" alt="">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <select>
+                    <option>All category</option>
+                    <option>Electronics</option>
+                    <option>Clothing</option>
+                    <option>Books</option>
+                </select>
+                <button>Search</button>
+            </div>
+            <div class="user-actions">
+                <img src="/Images/Profile.png" alt="">
+                <img src="/Images/Message.png" alt="">
+                <img src="/Images/Orders.png" alt="">
+                <img src="/Images/Cart.png" alt="">
+            </div>
+        </div>
+        <nav class=" nav-bar">
+            <ul>
+                <span>☰</span>
+                <li> All category</li>
+                <li>Hot offers</li>
+                <li>Gift boxes</li>
+                <li>Projects</li>
+                <li>Menu item</li>
+                <li>Help <span>⌄</span>
+                </li>
+            </ul>
+            <ul class="language-shipping">
+                <li>English, USD <span>⌄</span></li>
+                <li> Ship to <img src="/Images/icon.png"><span>⌄</span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      
+        <div class="breadcrumb">
+            <a href="./Homepage.html">Home</a>
+            <span id="breadcrumb-category"></span>
+            <span id="breadcrumb-subcategory"></span>
+            <span id="breadcrumb-product"></span>
+        </div>
+        <hr>
+        <div class="category-container">
+            <div class="category-header">
+                <h2 class="category-title">Category</h2>
+                <span class="category-toggle">&#9650;</span> </div>
+            <ul class="category-list">
+                <li class="category-item">Mobile accessory</li>
+                <li class="category-item">Electronics</li>
+                <li class="category-item">Smartphones</li>
+                <li class="category-item">Modern tech</li>
+            </ul>
+            <div class="category-see-all">
+                <a href="#">See all</a>
+            </div>
+        </div>
+        <hr>
+        <div class="brands-filter">
+            <div class="brands-header">
+                <h2 class="brands-title">Brands</h2>
+                <span class="brands-toggle">&#9650;</span>
+            </div>
+            <ul class="brands-list">
+                <li class="brand-item">
+                    <input type="checkbox" id="samsung">
+                    <label for="samsung">Samsung</label>
+                </li>
+                <li class="brand-item">
+                    <input type="checkbox" id="apple">
+                    <label for="apple">Apple</label>
+                </li>
+                <li class="brand-item">
+                    <input type="checkbox" id="huawei">
+                    <label for="huawei">Huawei</label>
+                </li>
+                <li class="brand-item">
+                    <input type="checkbox" id="poco">
+                    <label for="poco">Pocco</label>
+                </li>
+                <li class="brand-item">
+                    <input type="checkbox" id="lenovo">
+                    <label for="lenovo">Lenovo</label>
+                </li>
+            </ul>
+            <div class="brands-see-all">
+                <a href="#">See all</a>
+            </div>
+        </div>
+        <hr>
+        <div class="features-filter">
+            <div class="features-header">
+                <h2 class="features-title">Features</h2>
+                <span class="features-toggle">&#9650;</span>
+            </div>
+            <ul class="features-list">
+                <li class="features-item">
+                    <input type="checkbox" id="metallic">
+                    <label for="metallic">Metallic</label>
+                </li>
+                <li class="features-item">
+                    <input type="checkbox" id="Plastic cover">
+                    <label for="Plastic cover">Plastic cover</label>
+                </li>
+                <li class="features-item">
+                    <input type="checkbox" id="8GB Ram">
+                    <label for="8GB Ram">8GB Ram</label>
+                </li>
+                <li class="features-item">
+                    <input type="checkbox" id="Super power">
+                    <label for="Super power">Super power</label>
+                </li>
+                <li class="features-item">
+                    <input type="checkbox" id="Large Memory">
+                    <label for="Large Memory">Large Memory</label>
+                </li>
+            </ul>
+            <div class="features-see-all">
+                <a href="#">See all</a>
+            </div>
+        </div>
+        <hr>
+        <div class="price-range-filter">
+            <div class="price-range-header">
+                <h2 class="price-range-title">Price range</h2>
+                <span class="price-range-toggle">&#9650;</span>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slider-track"></div>
+                    <input type="range" min="0" max="1000000" value="0" class="slider-input" id="min-slider">
+                    <input type="range" min="0" max="1000000" value="999999" class="slider-input" id="max-slider">
+                </div>
+                <div class="price-inputs">
+                    <div class="input-group">
+                        <label for="min-price">Min</label>
+                        <input type="number" id="min-price" value="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="max-price">Max</label>
+                        <input type="number" id="max-price" value="999999">
+                    </div>
+                </div>
+            </div>
+        </div>
+            <button class="apply-button">Apply</button>
+            <hr>
+            <div class="condition-filter">
+                <div class="condition-header">
+                    <h2 class="condition-title">Condition</h2>
+                    <span class="condition-toggle">&#9650;</span>
+                </div>
+                <ul class="condition-list">
+                    <li class="condition-item">
+                        <input type="radio" id="any">
+                        <label for="any">Any</label>
+                    </li>
+                    <li class="condition-item">
+                        <input type="radio" id="refurnished">
+                        <label for="refurnished">Refurnished</label>
+                    </li>
+                    <li class="condition-item">
+                        <input type="radio" id="brand new">
+                        <label for="brand new">Brand new</label>
+                    </li>
+                    <li class="condition-item">
+                        <input type="radio" id="Old items">
+                        <label for="Old items">Old items</label>
+                    </li>
+                </ul>
+                <div class="condition-see-all">
+                    <a href="#">See all</a>
+                </div>
+            </div>
+            <hr>
+            <div class="ratings-filter">
+                <div class="ratings-header">
+                    <h2 class="ratings-title">Ratings</h2>
+                    <span class="ratings-toggle">&#9650;</span>
+                </div>
+                <ul class="ratings-list">
+                    <li class="rating-item">
+                        <input type="checkbox" id="rating-5">
+                        <label for="rating-5">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </label>
+                    </li>
+                    <li class="rating-item">
+                        <input type="checkbox" id="rating-4-plus">
+                        <label for="rating-4-plus">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </label>
+                    </li>
+                    <li class="rating-item">
+                        <input type="checkbox" id="rating-3-plus">
+                        <label for="rating-3-plus">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </label>
+                    </li>
+                    <li class="rating-item">
+                        <input type="checkbox" id="rating-2-plus">
+                        <label for="rating-2-plus">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-section">
+                <div class="filter-info">
+                    <span class="item-count">12,911 items in Mobile accessory</span>
+                    <label class="verified-only">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"><i class="fas fa-check"></i></span>
+                        Verified only
+                    </label>
+                </div>
+                <div class="filter-controls">
+                    <div class="sort-control">
+                        <select id="sort-options">
+                            <option>Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest</option>
+                            <option>Best Selling</option>
+                        </select>
+                     </div>
+                    <div class="view-options">
+                        <button class="grid-view active">
+                            <i class="fas fa-th-large"></i>
+                        </button>
+                        <button class="list-view">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>    
+            <!-- Product Cards -->
+            <div class="product-card1">
+                <a href="productDetail.html?id=22">
+                <div class="product-image-container1">
+                    <img src="/ProductImages/item42.png" alt="Product" class="product-image1">
+                    <button class="heart-button1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart-icon1">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-details1">
+                    <h2 class="product-title1">Canon Camera EOS 2000, Black 10x zoom</h2>
+                    <div class="price-container1">
+                        <span class="current-price1">$998.00</span>
+                        <span class="original-price1">$1128.00</span>
+                    </div>
+                    <div class="rating-container1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="empty-star-icon1"><polygon  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <span class="rating-value1">7.5</span>
+                        <span class="order-count1">154 orders</span>
+                        <span class="shipping-info1">Free Shipping</span>
+                    </div>
+                    <p class="description1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="view-details-link1">View details</a>
+                </div>
+              </a>
+            </div>
+            <div class="product-card2">
+                <a href="productDetail.html?id=23">
+                <div class="product-image-container2">
+                    <img src="/ProductImages/item43.png" alt="Product" class="product-image2">
+                    <button class="heart-button2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart-icon2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-details2">
+                    <h2 class="product-title2">Canon Camera EOS 2000, Black 10x zoom</h2>
+                    <div class="price-container2">
+                        <span class="current-price2">$998.00</span>
+                        <span class="original-price2">$1128.00</span>
+                    </div>
+                    <div class="rating-container2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="empty-star-icon2"><polygon  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <span class="rating-value2">7.5</span>
+                        <span class="order-count2">154 orders</span>
+                        <span class="shipping-info2">Free Shipping</span>
+                    </div>
+                    <p class="description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="view-details-link2">View details</a>
+                </div>
+              </a> 
+            </div>
+            <div class="product-card3">
+              <a href="productDetail.html?id=24">
+                <div class="product-image-container3">
+                    <img src="/ProductImages/item44.png" alt="Product" class="product-image3">
+                    <button class="heart-button3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart-icon3">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-details3">
+                    <h2 class="product-title3">Canon Camera EOS 2000, Black 10x zoom</h2>
+                    <div class="price-container3">
+                        <span class="current-price3">$998.00</span>
+                        <span class="original-price3">$1128.00</span>
+                    </div>
+                    <div class="rating-container3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon3"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon3"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon3"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon3"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="empty-star-icon3"><polygon  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <span class="rating-value3">7.5</span>
+                        <span class="order-count3">154 orders</span>
+                        <span class="shipping-info3">Free Shipping</span>
+                    </div>
+                    <p class="description3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="view-details-link3">View details</a>
+                </div>
+              </a>
+            </div>
+            <div class="product-card4">
+                <a href="productDetail.html?id=25">
+                <div class="product-image-container4">
+                    <img src="/ProductImages/item45.png" alt="Product" class="product-image4">
+                    <button class="heart-button4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart-icon4">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-details4">
+                    <h2 class="product-title4">Canon Camera EOS 2000, Black 10x zoom</h2>
+                    <div class="price-container4">
+                        <span class="current-price4">$998.00</span>
+                        <span class="original-price4">$1128.00</span>
+                    </div>
+                    <div class="rating-container4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="empty-star-icon4"><polygon  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <span class="rating-value4">7.5</span>
+                        <span class="order-count4">154 orders</span>
+                        <span class="shipping-info4">Free Shipping</span>
+                    </div>
+                    <p class="description4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="view-details-link4">View details</a>
+                </div>
+              </a>
+            </div>
+            <div class="product-card5">
+                <a href="productDetail.html?id=26">
+                <div class="product-image-container5">
+                    <img src="/ProductImages/item46.png" alt="Product" class="product-image5">
+                    <button class="heart-button5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart-icon5">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-details5">
+                    <h2 class="product-title5">Canon Camera EOS 2000, Black 10x zoom</h2>
+                    <div class="price-container5">
+                        <span class="current-price5">$998.00</span>
+                        <span class="original-price5">$1128.00</span>
+                    </div>
+                    <div class="rating-container5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="empty-star-icon5"><polygon  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <span class="rating-value5">7.5</span>
+                        <span class="order-count5">154 orders</span>
+                        <span class="shipping-info5">Free Shipping</span>
+                    </div>
+                    <p class="description5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="view-details-link5">View details</a>
+                </div>
+              </a>
+            </div>
+            <div class="product-card6">
+                <a href="productDetail.html?id=27">
+                <div class="product-image-container6">
+                    <img src="/ProductImages/item47.png" alt="Product" class="product-image6">
+                  
+                    <button class="heart-button6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="heart-icon6">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-details6">
+                    <h2 class="product-title6">Canon Camera EOS 2000, Black 10x zoom</h2>
+                    <div class="price-container6">
+                        <span class="current-price6">$998.00</span>
+                        <span class="original-price6">$1128.00</span>
+                    </div>
+                    <div class="rating-container6">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon6"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon6"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon6"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="star-icon6"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="empty-star-icon6"><polygon  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <span class="rating-value6">7.5</span>
+                        <span class="order-count6">154 orders</span>
+                        <span class="shipping-info6">Free Shipping</span>
+                    </div>
+                    <p class="description6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="view-details-link6">View details</a>
+                </div>
+              </a> 
+            </div>
+            <div class="pagination-container">
+                <div class="show-select-wrapper">
+                    <select class="select-input">
+                        <option>Show 10</option>
+                        <option>20</option>
+                        <option>30</option>
+                    </select>
+                </div>
+                <div class="pagination-buttons">
+                    <button class="page-button disabled">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="page-button-icon">
+                            <path d="M15.41 7.41L10.83 12l4.58 4.59L14 18l-6-6 6-6z"></path>
+                        </svg>
+                    </button>
+                    <button class="page-button active">1</button>
+                    <button class="page-button">2</button>
+                    <button class="page-button">3</button>
+                    <button class="page-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="page-button-icon">
+                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+    <footer>
+        <div class="top-container">
+            <h1>Subscribe on our newsletter</h1>
+            <p>Get daily news from upcoming offers from the suppliers all around the world</p>
+            <input type="email" placeholder="Email" value="" name="email">
+            <button class="btn btn-primary">Subscribe</button>
+        </div>
+        <div class="mid-container">
+            <div class="footer-brand">
+                <div class="brand-logo"><img src="/Images/logo-colored.png" alt=""></div> <!-- Add your brand logo here -->
+                <p>Best information about the company goes here but now lorem ipsum is</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Partnership</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Money Refund</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>For users</h4>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">My Orders</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-apps">
+                <h4>Get app</h4>
+                <a href="#"><img src="/Images/app-store.png" alt="App Store"></a>
+                <a href="#"><img src="/Images/google-play.png" alt="Google Play"></a>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <h4>&copy; 2023 Ecommerce</h4>
+            <p><img src="/Images/flag3.png">English <span>⌄</span></p>
+        </div>
+    </footer>
+   <script type="module" src="/JavaScript/ProductListing.js">
+    </script>
+</body>
+
+</html>

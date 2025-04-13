@@ -1,0 +1,938 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 300vh;
+    background-color: rgb(243, 251, 255);
+    overflow-x: hidden;
+}
+
+main {
+    height: 0;
+}
+.header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    position: relative;
+    left: 30px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid blue;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    width: 250px;
+}
+
+.search-bar select {
+    border: 0;
+    outline: none;
+    border-left: 2px solid #007bff;
+    height: 35px;
+    position: relative;
+    padding-left: 5px;
+    left: -5px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    height: 35px;
+}
+
+.user-actions {
+    cursor: pointer;
+    position: relative;
+    left: -25px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #f9f9f9;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-bar span {
+    position: relative;
+    left: -5px;
+    top: -2px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    left: 20px;
+}
+
+.nav-bar ul li {
+    margin-right: 18px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.nav-bar ul li span {
+    margin-right: 5px;
+    position: relative;
+    top: -5px;
+    font-size: 20px;
+    font-weight: 400;
+    color: gray;
+    left: 1px;
+    /* Space between icon and text */
+}
+
+.language-shipping li {
+    margin-left: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.language-shipping img {
+    cursor: pointer;
+    top: 2px;
+    position: relative;
+}
+
+.language-shipping span {
+    cursor: pointer;
+    position: relative;
+    left: -10px;
+}
+
+
+.mid-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 1720px;
+    height: 280px;
+    padding: 80px;
+    justify-content: center;
+    background-color: white;
+}
+
+.footer-brand {
+    max-width: 250px;
+}
+
+.footer-brand .brand-logo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: -80px;
+    top: -8px;
+    background-color: #dce5fa;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    color: #666;
+    top: 8px;
+    position: relative;
+    left: -80px;
+}
+
+.social-icons {
+    margin-top: 10px;
+    top: 18px;
+    position: relative;
+    left: -80px;
+}
+
+.social-icons a {
+    color: #666;
+    font-size: 16px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-apps {
+    text-align: right;
+}
+
+.footer-apps h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative;
+    left: 20px;
+}
+
+.footer-apps img {
+    width: 120px;
+    display: block;
+    position: relative;
+    left: 80px;
+    margin-bottom: 10px;
+}
+
+.bottom-container {
+    background-color: rgb(223, 222, 222);
+    height: 80px;
+    top: 1720px;
+    position: relative;
+}
+
+.bottom-container h4 {
+    position: relative;
+    left: 30px;
+    top: 33px;
+    font-weight: 500;
+}
+
+.bottom-container p {
+    position: relative;
+    left: 1200px;
+    top: 9px;
+}
+
+.bottom-container p img {
+    position: relative;
+    left: -7px;
+    top: 3px;
+}
+
+.bottom-container p span {
+    position: relative;
+    top: -5px;
+    left: 3px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*Product Details*/
+.breadcrumb {
+    font-size: 14px;
+    /* Adjust font size as needed */
+    color: #666;
+    /* Adjust text color as needed */
+    margin: 10px 0;
+    /* Add some margin for spacing */
+    margin-left: 37px;
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Vertically align items */
+}
+
+.breadcrumb a {
+    color: #666;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
+.breadcrumb span {
+    margin: 0 5px;
+    /* Add spacing between items */
+}
+
+/* Style for the ">" separator */
+.breadcrumb span:not(:last-child)::after {
+    content: "";
+    margin-left: 5px;
+    /* Add spacing after the separator */
+    color: #ccc;
+    /* Separator color */
+}
+
+#product-container {
+    background-color: white;
+    width: 1200px;
+    margin: 12px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-left {
+    width: 550px;
+    background-color: rgb(255, 255, 255);
+    /* Adjust width as needed */
+    position: relative;
+    left: 380px;
+}
+
+.product-left #in-stock {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 20px;
+}
+
+.product-left #product-title {
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+.product-meta {
+    color: #fcfcfc;
+    /* Adjust color as needed */
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+.rating {
+    color: orange;
+    /* Style the stars */
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    font-size: 22px;
+}
+
+.reviews,
+.sold {
+    position: relative;
+    left: 140px;
+    top: 47px;
+    color: rgb(136, 135, 135);
+    font-size: 18px;
+    margin-left: 10px;
+    /* Add spacing between review/sold counts */
+
+}
+
+
+#product-image {
+    width: 100%;
+    max-height: 400px;
+    /* Adjust as needed */
+    object-fit: contain;
+    /* Prevents image distortion */
+    margin-bottom: 10px;
+    margin-left: -490px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+.product-thumbnails {
+    display: flex;
+    gap: 5px;
+    /* Spacing between thumbnails */
+    margin-bottom: 10px;
+}
+
+.product-thumbnails img {
+    width: 70px;
+    /* Adjust thumbnail size */
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-top: 490px;
+    position: relative;
+    top: -43px;
+    left: -534px;
+}
+
+#product-details {
+    margin-top: 80px;
+    padding: 20px;
+
+}
+
+#product-details h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#product-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+#product-details li {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+}
+
+#product-details-list li {
+    /* Targeting li inside the specific ul */
+    display: flex;
+    align-items: baseline;
+    /* Align text baselines */
+    padding: 13px;
+}
+
+.detail-label {
+    color: gray;
+    font-weight: bold;
+    width: 150px;
+    /* Adjust as needed for your longest label */
+    text-align: left;
+    flex-shrink: 0;
+    /* Prevent label from shrinking */
+}
+
+.detail-value {
+    color: black;
+    text-align: left;
+    /* Align value text to the left */
+    flex-grow: 1;
+    /* Allow value to take remaining space */
+    padding-left: 15px;
+    /* Add spacing between label and value */
+    /* Remove these lines: */
+    /* position: relative; */
+    /* right: 180px; */
+}
+
+#product-details li.price-item {
+    border-bottom: 1px solid #dad8d8;
+    /* Only apply border to Price */
+}
+
+#product-details li.design-item {
+    border-bottom: 1px solid #dad8d8;
+    /* Only apply border to Price */
+}
+
+#product-details li:last-child {
+    border-bottom: 1px solid #dad8d8;
+    /* Only apply border to Price */
+}
+
+#product-details li strong {
+    font-weight: bold;
+}
+
+#product-details .price-tiers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#product-details .price-tier {
+    padding: 10px 15px;
+    width: 180px;
+    background-color: #fac8c8;
+}
+
+#product-details .price-tier:nth-child(1) {
+    padding: 10px 15px;
+    border-right: 2px solid gray;
+}
+
+#product-details .price-tier:nth-child(2) {
+    padding: 10px 15px;
+    border-right: 2px solid gray;
+}
+
+#product-details .price-tier:nth-child(1) strong {
+    color: #f00;
+    /* Only color the price */
+    font-size: 1.5em;
+}
+
+#product-details .price-tier:nth-child(2) strong {
+    font-size: 1.5em;
+}
+
+#product-details .price-tier:nth-child(3) strong {
+    font-size: 1.5em;
+}
+
+#product-details .spaced-item {
+    margin-bottom: 10px;
+    /* Adds spacing only below Price & Warranty */
+}
+
+/* Supplier info styles */
+.product-right {
+    width: 300px;
+    /* Adjust width as needed */
+    padding: 20px;
+    margin-left: -8px;
+}
+
+.supplier-info {
+    border: 1px solid #eee;
+    padding: 15px;
+    height: 300px;
+    background-color: white;
+}
+
+.supplier-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#supplier-name::after {
+    position: relative;
+    top: 17px;
+    right: 60px;
+    width: 230px;
+    content: "";
+    display: block;
+    /* Make it take up the full width */
+    border-bottom: 1px solid #ccc;
+    /* Adjust color and thickness as needed */
+}
+
+.supplier-label {
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+    top: -10px;
+}
+
+#supplier-name {
+    position: relative;
+    left: -55px;
+    top: 13px;
+}
+
+.supplier-details {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.supplier-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.supplier-item img {
+    margin-right: 8px;
+    position: relative;
+    top: 15px;
+    /* adjust vertically if needed */
+}
+
+
+#supplier-location {
+    position: relative;
+    color: #666;
+    top: 16px;
+    left: 5px;
+}
+
+.worldwide-shipping {
+    display: block;
+    color: #666;
+    margin-top: 10px;
+    position: relative;
+    top: 10px;
+    left: 8px;
+}
+
+.verified-seller {
+    display: block;
+    color: #666;
+    margin-top: 10px;
+    position: relative;
+    top: 11px;
+    left: 8px;
+}
+
+.inquiry-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.seller-profile {
+    border: 1px solid rgb(199, 197, 197);
+    color: blue;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    top: 4px;
+    margin-bottom: 10px;
+}
+
+.seller-profile,
+.save-for-later {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.save-for-later {
+    text-decoration: none;
+    color: #007bff;
+    position: relative;
+    top: 20px;
+    font-weight: bold;
+}
+
+.save-for-later i {
+    color: #007bff;
+}
+
+/* SUb Container*/
+#product-subContainer {
+    padding: 20px;
+    width: 890px;
+    border: 1px solid #ddd;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 73px;
+    margin-bottom: 20px;
+}
+
+.product-column-detail {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    border-bottom: 1px solid #ddd;
+    /* Add the light gray bottom border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.product-column-detail p {
+    color: #929191;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: normal;
+    padding-bottom: 5px;
+    /* Add some padding below the text for the blue bar */
+}
+
+.product-column-detail p:first-child {
+    color: #007bff;
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+    /* Add the blue bar below the active tab */
+    padding-bottom: 8px;
+    /* Adjust padding to control the blue bar's position relative to the gray line */
+    margin-bottom: -11px;
+    /* Negative margin to pull the blue bar slightly upwards, overlapping the gray line */
+}
+
+.product-column-detail p:hover {
+    color: #007bff;
+}
+
+#product-description {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+
+}
+
+#product-subContainer table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+}
+
+#product-subContainer table tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+#product-subContainer table tbody tr:last-child {
+    border-bottom: none;
+}
+
+#product-subContainer table tbody td {
+    padding: 8px;
+    position: relative;
+    /* Keep this for now, but consider alternatives */
+    color: #555;
+}
+
+.detail-label-cell {
+    background-color: #f1f6fc;
+    text-align: left;
+    padding-right: 10px;
+    white-space: nowrap;
+    /* Optional: Add some spacing */
+}
+
+.detail-value-cell {
+    position: relative;
+    left: 50px;
+    flex-grow: 1;
+    right: 0;
+}
+
+#product-subContainer table tbody td:first-child {
+    font-weight: bold;
+    width: 230px;
+    /* Adjust width as needed */
+}
+
+#product-subContainer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+#product-subContainer ul li {
+    color: #333;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#product-subContainer ul li i.fa-check {
+    color: green;
+    margin-right: 8px;
+}
+
+#product-price {
+    font-size: 1.5em;
+    color: #007bff;
+    /* Example primary color */
+    font-weight: bold;
+}
+
+#side-products {
+    width: 300px;
+    /* Adjust width as needed */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 975px;
+    margin-top: -618px;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+#side-products h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.product-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 8px;
+    /* Add some padding inside the item border */
+}
+
+.product-image {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-title {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.related-products-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 40px;
+    left: 72px;
+    position: relative;
+    top: 20px;
+    width: 1200px;
+    height: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+#related-products {
+    position: relative;
+    top: 62px;
+    font-size: 18px;
+    left: 90px;
+    z-index: 1;
+}
+
+.product-display-card {
+    background-color: #fff;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.product-image-area {
+    background-color: #eee;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-image {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: contain;
+    /* Or cover, depending on desired image scaling */
+}
+
+.product-info-section {
+    padding: 10px;
+    text-align: left;
+}
+
+.item-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.price-range {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Banner Discount */
+
+.discount-banner {
+    background-color: #1a52ba;
+    /* Dark blue */
+    color: white;
+    padding: 30px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    /* Add some space below the banner */
+}
+
+.banner-text {
+    flex-grow: 1;
+}
+
+.main-discount-text {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.sub-discount-text {
+    font-size: 0.9em;
+    color: #d0e2ff;
+    /* Light blue */
+}
+
+.shop-now-button {
+    background-color: #ff8c00;
+    /* Orange */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-button:hover {
+    background-color: #e67e00;
+    /* Darker orange on hover */
+}

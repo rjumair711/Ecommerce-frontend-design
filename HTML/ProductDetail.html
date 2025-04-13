@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/ProductDetail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Product Details</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="/Images/logo-colored.png" alt="">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <select>
+                    <option>All category</option>
+                    <option>Electronics</option>
+                    <option>Clothing</option>
+                    <option>Books</option>
+                </select>
+                <button>Search</button>
+            </div>
+            <div class="user-actions">
+                <img src="/Images/Profile.png" alt="">
+                <img src="/Images/Message.png" alt="">
+                <img src="/Images/Orders.png" alt="">
+                <img src="/Images/Cart.png" alt="">
+            </div>
+        </div>
+        <nav class=" nav-bar">
+            <ul>
+                <span>☰</span>
+                <li> All category</li>
+                <li>Hot offers</li>
+                <li>Gift boxes</li>
+                <li>Projects</li>
+                <li>Menu item</li>
+                <li>Help <span>⌄</span>
+                </li>
+            </ul>
+            <ul class="language-shipping">
+                <li>English, USD <span>⌄</span></li>
+                <li> Ship to <img src="/Images/icon.png"><span>⌄</span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="breadcrumb">
+            <a href="./Homepage.html">Home</a>
+            <span id="breadcrumb-category"></span>
+            <span id="breadcrumb-subcategory"></span>
+            <span id="breadcrumb-product"></span>
+        </div>
+        <div id="product-container">
+            <img id="product-image" src="" alt="">
+            <div class="product-left">
+                <p id="in-stock" style="color: green;">✔ In stock</p>
+                <h1 id="product-title"></h1>
+                <div id="product-details">
+                </div>
+
+            </div>
+            <div class="product-thumbnails">
+            </div>
+            <div class="product-right">
+                <div class="supplier-info">
+                    <div class="supplier-header">
+                        <img src="/Images/img.jpg" height="50px" width="50px" alt="">
+                        <span class="supplier-label">Supplier</span>
+                        <span id="supplier-name"></span>
+
+                    </div>
+                    <div class="supplier-details">
+                        <div class="supplier-item">
+                            <img class="flag-img" src="" alt="">
+                            <span id="supplier-location"></span>
+                        </div>
+
+                        <div class="supplier-item">
+                            <img class="verified-img" src="/Images/verified_user.png" alt="">
+                            <span class="verified-seller">Verified Seller</span>
+                        </div>
+
+                        <div class="supplier-item">
+                            <img class="worldwide-img" src="/Images/worldwide.png" alt="">
+                            <span class="worldwide-shipping">Worldwide shipping</span>
+                        </div>
+                    </div>
+                    <button class="inquiry-button">Send inquiry</button>
+                    <button class="seller-profile">Seller's profile</button>
+                </div>
+                <a href="#" class="save-for-later"><i class="far fa-heart"></i> Save for later</a>
+            </div>
+        </div>
+        <div id="product-subContainer">
+            <div class="product-column-detail">
+                <p>Description</p>
+                <p>Reviews</p>
+                <p>Shipping</p>
+                <p>About seller</p>
+            </div>
+            <p id="product-description"></p>
+            <table>
+                <tbody id="product-details-body">
+                </tbody>
+            </table>
+            <ul>
+                <li id="feature-1"><i class="fa fa-check"></i></li>
+                <li id="feature-2"><i class="fa fa-check"></i></li>
+                <li id="feature-3"><i class="fa fa-check"></i></li>
+                <li id="feature-4"><i class="fa fa-check"></i></li>
+            </ul>
+        </div>
+        <div id="side-products">
+            <h4>You may like</h4>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="../ProductImages/item31.png" alt="" width="70" height="70">
+                </div>
+                <div class="product-details">
+                    <div class="product-title">Men Blazers Sets Elegant Formal</div>
+                    <div class="product-price">$7.00 - $99.50</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="../ProductImages/item32.png" alt="" width="70" height="70">
+                </div>
+                <div class="product-details">
+                    <div class="product-title">Men Shirt Sleeve Polo Contrast</div>
+                    <div class="product-price">$7.00 - $99.50</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="../ProductImages/item33.png" alt="" width="70" height="70">
+                </div>
+                <div class="product-details">
+                    <div class="product-title">Apple Watch Series Space Gray</div>
+                    <div class="product-price">$7.00 - $99.50</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="../ProductImages/item34.png" alt="" width="70" height="70">
+                </div>
+                <div class="product-details">
+                    <div class="product-title">Basketball Crew Socks Long Stuff</div>
+                    <div class="product-price">$7.00 - $99.50</div>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="../ProductImages/item35.png" alt="" width="70" height="70">
+                </div>
+                <div class="product-details">
+                    <div class="product-title">New Summer Men's castrol T-Shirts</div>
+                    <div class="product-price">$7.00 - $99.50</div>
+                </div>
+            </div>
+        </div>
+        <h2 id="related-products">Related products</h2>
+        <div class="related-products-section">
+            <div class="product-display-card">
+                <div class="product-image-area">
+                    <img src="../ProductImages/item36.png" alt="Xiaomi Redmi 8 Original Product" class="display-image">
+                </div>
+                <div class="product-info-section">
+                    <div class="item-title">Xiaomi Redmi 8 Original</div>
+                    <div class="price-range">$32.00-$40.00</div>
+                </div>
+            </div>
+            <div class="product-display-card">
+                <div class="product-image-area">
+                    <img src="../ProductImages/item37.png" alt="Xiaomi Redmi 8 Original Product" class="display-image">
+                </div>
+                <div class="product-info-section">
+                    <div class="item-title">Xiaomi Redmi 8 Original</div>
+                    <div class="price-range">$32.00-$40.00</div>
+                </div>
+            </div>
+            <div class="product-display-card">
+                <div class="product-image-area">
+                    <img src="../ProductImages/item38.png" alt="Xiaomi Redmi 8 Original Product" class="display-image">
+                </div>
+                <div class="product-info-section">
+                    <div class="item-title">Xiaomi Redmi 8 Original</div>
+                    <div class="price-range">$32.00-$40.00</div>
+                </div>
+            </div>
+            <div class="product-display-card">
+                <div class="product-image-area">
+                    <img src="../ProductImages/item39.png" alt="Xiaomi Redmi 8 Original Product" class="display-image">
+                </div>
+                <div class="product-info-section">
+                    <div class="item-title">Xiaomi Redmi 8 Original</div>
+                    <div class="price-range">$32.00-$40.00</div>
+                </div>
+            </div>
+            <div class="product-display-card">
+                <div class="product-image-area">
+                    <img src="../ProductImages/item40.png" alt="Xiaomi Redmi 8 Original Product" class="display-image">
+                </div>
+                <div class="product-info-section">
+                    <div class="item-title">Xiaomi Redmi 8 Original</div>
+                    <div class="price-range">$32.00-$40.00</div>
+                </div>
+            </div>
+            <div class="product-display-card">
+                <div class="product-image-area">
+                    <img src="../ProductImages/item41.png" alt="Xiaomi Redmi 8 Original Product" class="display-image">
+                </div>
+                <div class="product-info-section">
+                    <div class="item-title">Xiaomi Redmi 8 Original</div>
+                    <div class="price-range">$32.00-$40.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="discount-banner">
+            <div class="banner-text">
+                <div class="main-discount-text">Super discount on more than 100 USD</div>
+                <div class="sub-discount-text">Have you ever finally just write dummy info</div>
+            </div>
+            <button class="shop-now-button">Shop now</button>
+        </div>
+    </main>
+    <footer>
+        <div class="mid-container">
+            <div class="footer-brand">
+                <div class="brand-logo"><img src="/Images/logo-colored.png" alt=""></div>
+                <!-- Add your brand logo here -->
+                <p>Best information about the company goes here but now lorem ipsum is</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Partnership</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Find store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Money Refund</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>For users</h4>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">My Orders</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-apps">
+                <h4>Get app</h4>
+                <a href="#"><img src="/Images/app-store.png" alt="App Store"></a>
+                <a href="#"><img src="/Images/google-play.png" alt="Google Play"></a>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <h4>&copy; 2023 Ecommerce</h4>
+            <p><img src="/Images/america-flag.png">English <span>⌄</span></p>
+        </div>
+    </footer>
+    <script src="/JavaScript/ProductDetail.js" type="module"></script>
+</body>
+
+</html>
