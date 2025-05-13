@@ -13,12 +13,17 @@ body {
 
 main {
     height: 10vh;
+    margin-top: 130px;
 }
 
 .header {
     width: 100%;
+    margin-top: -130px;
+    z-index: 1;
+    position: fixed;
     background: #fff;
     border-bottom: 1px solid #ddd;
+ 
 }
 
 .top-bar {
@@ -1548,6 +1553,7 @@ hr {
     text-decoration: none;
     list-style: none;
 }
+
 .product-image-container5 {
     position: relative;
 }

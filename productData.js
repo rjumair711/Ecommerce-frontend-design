@@ -1277,7 +1277,245 @@ export const productData = {
       },
       27: {
         name: "Canon Professional DSLR Camera",
-        image: "/ProductImages/Item47.png",
+        image: "/ProductImages/item63.png",
+        description: "A professional-grade DSLR camera from Canon, ideal for capturing high-quality photos and videos with precision.",
+        price: "$899.00",
+        category: "Electronics",
+        subcategory: "Cameras",
+        priceTiers: [
+          { price: "$899.00", quantity: "1-15 pcs" },
+          { price: "$869.00", quantity: "16-40 pcs" },
+          { price: "$839.00", quantity: "40+ pcs" }
+        ],
+        details: [
+          { label: "Sensor Type", value: "Full-Frame CMOS" },
+          { label: "Megapixels", value: "30.3 MP" },
+          { label: "Video Recording", value: "4K UHD Video" },
+          { label: "ISO Range", value: "100-40000 (Expandable to 50-102400)" },
+          { label: "Autofocus System", value: "Dual Pixel CMOS AF" },
+          { label: "Mount", value: "Canon EF Mount" }
+        ],
+        detail_1: [
+          { label: "Model", value: "EOS R6" },
+          { label: "Image Processor", value: "DIGIC X" },
+          { label: "Continuous Shooting", value: "Up to 12 fps" },
+          { label: "Viewfinder", value: "3.69 Million Dot EVF" },
+          { label: "LCD Screen", value: "3.0\" Vari-Angle Touchscreen" }
+        ],
+        features: [
+          "High-resolution full-frame sensor",
+          "Advanced autofocus for sharp images",
+          "Excellent low-light performance",
+          "Versatile 4K video capabilities"
+        ],
+        thumbnails: [
+          "/SubProductImages/image16.jpg",
+          "/SubProductImages/image17.jpg",
+          "/SubProductImages/image18.jpg",
+          "/SubProductImages/image19.jpg",
+          "/SubProductImages/image20.jpg",
+        ],
+        supplier: {
+          name: "Precision Optics Co.",
+          location: "Canada, Toronto",
+          flag: "/Images/flag6.png"
+        },
+        rating: 4.9,
+        reviews: 92,
+        sold: 135
+      },
+      28: {
+        name: "Pant Coat and Shirt",
+        image: "/ProductImages/item64.webp",
+        description: "A professional-grade DSLR camera from Canon, ideal for capturing high-quality photos and videos with precision.",
+        price: "$899.00",
+        category: "Electronics",
+        subcategory: "Cameras",
+        priceTiers: [
+          { price: "$899.00", quantity: "1-15 pcs" },
+          { price: "$869.00", quantity: "16-40 pcs" },
+          { price: "$839.00", quantity: "40+ pcs" }
+        ],
+        details: [
+          { label: "Sensor Type", value: "Full-Frame CMOS" },
+          { label: "Megapixels", value: "30.3 MP" },
+          { label: "Video Recording", value: "4K UHD Video" },
+          { label: "ISO Range", value: "100-40000 (Expandable to 50-102400)" },
+          { label: "Autofocus System", value: "Dual Pixel CMOS AF" },
+          { label: "Mount", value: "Canon EF Mount" }
+        ],
+        detail_1: [
+          { label: "Model", value: "EOS R6" },
+          { label: "Image Processor", value: "DIGIC X" },
+          { label: "Continuous Shooting", value: "Up to 12 fps" },
+          { label: "Viewfinder", value: "3.69 Million Dot EVF" },
+          { label: "LCD Screen", value: "3.0\" Vari-Angle Touchscreen" }
+        ],
+        features: [
+          "High-resolution full-frame sensor",
+          "Advanced autofocus for sharp images",
+          "Excellent low-light performance",
+          "Versatile 4K video capabilities"
+        ],
+        supplier: {
+          name: "Precision Optics Co.",
+          location: "Canada, Toronto",
+          flag: "/Images/flag6.png"
+        },
+        rating: 4.9,
+        reviews: 92,
+        sold: 135
+      },
+      29: {
+        name: "Handsome Shirt and Shoes",
+        image: "/ProductImages/item65.jpg",
+        description: "A professional-grade DSLR camera from Canon, ideal for capturing high-quality photos and videos with precision.",
+        price: "$899.00",
+        category: "Electronics",
+        subcategory: "Cameras",
+        priceTiers: [
+          { price: "$899.00", quantity: "1-15 pcs" },
+          { price: "$869.00", quantity: "16-40 pcs" },
+          { price: "$839.00", quantity: "40+ pcs" }
+        ],
+        details: [
+          { label: "Sensor Type", value: "Full-Frame CMOS" },
+          { label: "Megapixels", value: "30.3 MP" },
+          { label: "Video Recording", value: "4K UHD Video" },
+          { label: "ISO Range", value: "100-40000 (Expandable to 50-102400)" },
+          { label: "Autofocus System", value: "Dual Pixel CMOS AF" },
+          { label: "Mount", value: "Canon EF Mount" }
+        ],
+        detail_1: [
+          { label: "Model", value: "EOS R6" },
+          { label: "Image Processor", value: "DIGIC X" },
+          { label: "Continuous Shooting", value: "Up to 12 fps" },
+          { label: "Viewfinder", value: "3.69 Million Dot EVF" },
+          { label: "LCD Screen", value: "3.0\" Vari-Angle Touchscreen" }
+        ],
+        features: [
+          "High-resolution full-frame sensor",
+          "Advanced autofocus for sharp images",
+          "Excellent low-light performance",
+          "Versatile 4K video capabilities"
+        ],
+        thumbnails: [
+          "/SubProductImages/image16.jpg",
+          "/SubProductImages/image17.jpg",
+          "/SubProductImages/image18.jpg",
+          "/SubProductImages/image19.jpg",
+          "/SubProductImages/image20.jpg",
+        ],
+        supplier: {
+          name: "Precision Optics Co.",
+          location: "Canada, Toronto",
+          flag: "/Images/flag6.png"
+        },
+        rating: 4.9,
+        reviews: 92,
+        sold: 135
+      },
+      30: {
+        name: "Clothes and Towels",
+        image: "/ProductImages/item66.jpeg",
+        description: "A professional-grade DSLR camera from Canon, ideal for capturing high-quality photos and videos with precision.",
+        price: "$899.00",
+        category: "Electronics",
+        subcategory: "Cameras",
+        priceTiers: [
+          { price: "$899.00", quantity: "1-15 pcs" },
+          { price: "$869.00", quantity: "16-40 pcs" },
+          { price: "$839.00", quantity: "40+ pcs" }
+        ],
+        details: [
+          { label: "Sensor Type", value: "Full-Frame CMOS" },
+          { label: "Megapixels", value: "30.3 MP" },
+          { label: "Video Recording", value: "4K UHD Video" },
+          { label: "ISO Range", value: "100-40000 (Expandable to 50-102400)" },
+          { label: "Autofocus System", value: "Dual Pixel CMOS AF" },
+          { label: "Mount", value: "Canon EF Mount" }
+        ],
+        detail_1: [
+          { label: "Model", value: "EOS R6" },
+          { label: "Image Processor", value: "DIGIC X" },
+          { label: "Continuous Shooting", value: "Up to 12 fps" },
+          { label: "Viewfinder", value: "3.69 Million Dot EVF" },
+          { label: "LCD Screen", value: "3.0\" Vari-Angle Touchscreen" }
+        ],
+        features: [
+          "High-resolution full-frame sensor",
+          "Advanced autofocus for sharp images",
+          "Excellent low-light performance",
+          "Versatile 4K video capabilities"
+        ],
+        thumbnails: [
+          "/SubProductImages/image16.jpg",
+          "/SubProductImages/image17.jpg",
+          "/SubProductImages/image18.jpg",
+          "/SubProductImages/image19.jpg",
+          "/SubProductImages/image20.jpg",
+        ],
+        supplier: {
+          name: "Precision Optics Co.",
+          location: "Canada, Toronto",
+          flag: "/Images/flag6.png"
+        },
+        rating: 4.9,
+        reviews: 92,
+        sold: 135
+      },
+      31: {
+        name: "Pant, Shirt and Shoes",
+        image: "/ProductImages/item67.jpeg",
+        description: "A professional-grade DSLR camera from Canon, ideal for capturing high-quality photos and videos with precision.",
+        price: "$899.00",
+        category: "Electronics",
+        subcategory: "Cameras",
+        priceTiers: [
+          { price: "$899.00", quantity: "1-15 pcs" },
+          { price: "$869.00", quantity: "16-40 pcs" },
+          { price: "$839.00", quantity: "40+ pcs" }
+        ],
+        details: [
+          { label: "Sensor Type", value: "Full-Frame CMOS" },
+          { label: "Megapixels", value: "30.3 MP" },
+          { label: "Video Recording", value: "4K UHD Video" },
+          { label: "ISO Range", value: "100-40000 (Expandable to 50-102400)" },
+          { label: "Autofocus System", value: "Dual Pixel CMOS AF" },
+          { label: "Mount", value: "Canon EF Mount" }
+        ],
+        detail_1: [
+          { label: "Model", value: "EOS R6" },
+          { label: "Image Processor", value: "DIGIC X" },
+          { label: "Continuous Shooting", value: "Up to 12 fps" },
+          { label: "Viewfinder", value: "3.69 Million Dot EVF" },
+          { label: "LCD Screen", value: "3.0\" Vari-Angle Touchscreen" }
+        ],
+        features: [
+          "High-resolution full-frame sensor",
+          "Advanced autofocus for sharp images",
+          "Excellent low-light performance",
+          "Versatile 4K video capabilities"
+        ],
+        thumbnails: [
+          "/SubProductImages/image16.jpg",
+          "/SubProductImages/image17.jpg",
+          "/SubProductImages/image18.jpg",
+          "/SubProductImages/image19.jpg",
+          "/SubProductImages/image20.jpg",
+        ],
+        supplier: {
+          name: "Precision Optics Co.",
+          location: "Canada, Toronto",
+          flag: "/Images/flag6.png"
+        },
+        rating: 4.9,
+        reviews: 92,
+        sold: 135
+      },
+      32: {
+        name: "Winter Clothes and Jersey",
+        image: "/ProductImages/item68.jpeg",
         description: "A professional-grade DSLR camera from Canon, ideal for capturing high-quality photos and videos with precision.",
         price: "$899.00",
         category: "Electronics",
