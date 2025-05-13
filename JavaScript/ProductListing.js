@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const breadcrumbProductSpan = document.getElementById('breadcrumb-product');
     const listingContentDiv = document.getElementById('listing-content');
 
-    breadcrumbContainer.innerHTML = '<a href="./Homepage.html">Home</a>';
+    breadcrumbContainer.innerHTML = '<a href="./index.html">Home</a>';
     breadcrumbCategorySpan.innerHTML = '';
     breadcrumbSubcategorySpan.innerHTML = '';
     breadcrumbProductSpan.innerHTML = '';
